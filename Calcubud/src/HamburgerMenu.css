@@ -1,0 +1,155 @@
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+  /*padding-left: 10px;*/
+  color: #FF8F00;
+  font-weight: 900px;
+  /*border: blue solid 2px;*/
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hamburger-menu:hover {
+  filter: none;
+}
+
+.hamburger-menu:hover .menu {
+  opacity: 1;
+  /* Show the menu on hover */
+  visibility: visible;
+  /* Make the menu visible */
+  transition-delay: 0s;
+  /* No delay when showing */
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  /* Position the menu below the icon */
+  left: 0;
+  background-color: #E8E1D4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  /* Hide the menu by default */
+  visibility: hidden;
+  /* Hide the menu from the DOM */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  border-radius: 8px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition-delay: 0.5s;
+  /* Delay before hiding */
+  color: #3a5a40;
+  font-family: poppins;
+  font-size: small;
+  width: max-content;
+  font-weight: medium;
+  z-index: 1;
+}
+
+
+.menu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #ccc transparent;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  /* Ensure the menu takes full width */
+}
+
+.menu li {
+  padding: 15px 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menu ul li button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: inherit;
+  color: #3a5a40;
+  background-color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.menu li:hover {
+  background-color: #f0f0f0;
+  display: block;
+  position: inherit;
+  border-radius: 8px;
+}
+
+/* ===== Responsive Enhancements for Hamburger Menu ===== */
+
+/* ===== Responsive Enhancements for Hamburger Menu ===== */
+
+@media (min-width: 1024px) {
+  .hamburger-menu {
+    padding-left: 15px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    padding: 0 10px;
+    font-size: 1.2rem;
+  }
+
+  .menu {
+    right: 0;
+    left: auto;
+    width: 160px;
+    font-size: 0.95rem;
+  }
+
+  .menu li {
+    padding: 12px;
+  }
+
+  .menu ul li button {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hamburger-menu {
+    font-size: 1rem;
+  }
+
+  .menu {
+    font-size: 0.9rem;
+    right: 0;
+  }
+
+  .menu li {
+    padding: 10px;
+  }
+}
+
+/* ===== Touch Devices: Simulate Hover ===== */
+@media (hover: none) and (pointer: coarse) {
+
+  .hamburger-menu:active .menu,
+  .hamburger-menu:focus-within .menu {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+  }
+
+  .menu li:active {
+    background-color: #e2e2e2;
+  }
+}

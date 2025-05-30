@@ -1,0 +1,27 @@
+.Calcubud {
+  color: #FF8F00;
+  font-family: poppins;
+  margin: auto;
+  text-decoration: none;
+}
+
+.Calcubud a {
+    text-decoration: none;
+      color: #FF8F00;
+}
+
+.menu-span {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.top-div {
+  display: flex;
+  flex-direction: row;
+
+}
+
+/* Hover effect */
+.geek-emoji {
+  filter: drop-shadow(0 0 10px #FF8F00);
+}

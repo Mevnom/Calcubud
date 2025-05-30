@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Soulside Betrayed';
+  src: url('/SoulsideBetrayed.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@media (max-width: 768px) {
+  .menu {
+    right: auto;
+    left: 0;
+  }
+}
