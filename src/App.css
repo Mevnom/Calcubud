@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Soulside Betrayed';
+  src: url('/SoulsideBetrayed.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.App {
+  background-color: #06402B;
+}

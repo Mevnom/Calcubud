@@ -1,0 +1,26 @@
+.about {
+    height: 100%;
+    padding: 10px;
+}
+
+.context {
+    background-color: #E8E1D4;
+    color: #06402B;
+    margin: auto;
+    border-radius: 10px;
+    font-family: 'Soulside Betrayed', serif;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.context p {
+    text-indent: 35px;
+
+}
+
+.context span ul {
+    text-indent: 0px;
+    text-align: left;
+    list-style-type: lower-roman;
+}
