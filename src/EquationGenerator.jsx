@@ -230,7 +230,7 @@ const EquationQuizGame = () => {
 
       {summary && renderSummary()}
 
-      <audio ref={schwiftyAudioRef} src="./get-schwifty.mp3" />
+      <audio ref={schwiftyAudioRef} src="/calcubud/get-schwifty.mp3" />
     </div>
   );
 };
