@@ -113,17 +113,17 @@ const EquationQuizGame = () => {
   };
 
   const calculateScore = () => {
-  let s = 0;
-  questions.forEach((q, i) => {
-    if (
-      userAnswers[i] !== undefined &&
-      String(q.ans).trim() === String(userAnswers[i]).trim()
-    ) {
-      s += 1;
-    }
-  });
-  setScore(s);
-};
+    let s = 0;
+    questions.forEach((q, i) => {
+      if (
+        userAnswers[i] !== undefined &&
+        String(q.ans).trim() === String(userAnswers[i]).trim()
+      ) {
+        s += 1;
+      }
+    });
+    setScore(s);
+  };
 
 
   const finishGame = () => {
@@ -160,7 +160,7 @@ const EquationQuizGame = () => {
     <div className="summary">
       <h2>Summary</h2>
       <p>You answered {userAnswers.filter((a) => a !== undefined).length} out of {questions.length} questions.</p>
-       <p><strong>Cumulative Score: {score}</strong> ✅</p>
+      <p><strong>Cumulative Score: {score}</strong> ✅</p>
       <ol>
         {questions.map((q, i) => (
           <li key={i}>
@@ -230,7 +230,11 @@ const EquationQuizGame = () => {
 
       {summary && renderSummary()}
 
-      <audio ref={schwiftyAudioRef} src="/calcubud/get-schwifty.mp3" />
+      <audio
+        ref={schwiftyAudioRef}
+        src="/calcubud/get-schwifty.mp3"
+      />
+
     </div>
   );
 };
