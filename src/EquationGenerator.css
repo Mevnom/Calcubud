@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Soulside Betrayed';
-    src: url('/calcubud/SoulsideBetrayed.ttf') format('truetype');
+    src: url('${import.meta.env.BASE_URL}/SoulsideBetrayed.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
