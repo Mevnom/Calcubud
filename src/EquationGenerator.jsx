@@ -189,7 +189,7 @@ const EquationQuizGame = () => {
           <span className='mode-spandeux'>
             <h2>
               Welcome to <span style={{
-                color:"#FF8F00",
+                color: "#FF8F00",
               }}>Calcubud!</span> Choose a mode to start playing.
             </h2>
             <br />
@@ -232,7 +232,8 @@ const EquationQuizGame = () => {
 
       <audio
         ref={schwiftyAudioRef}
-        src="/calcubud/get-schwifty.mp3"
+        src={`${import.meta.env.BASE_URL}get-schwifty.mp3`}
+        type="audio/mpeg"
       />
 
     </div>
