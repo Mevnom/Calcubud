@@ -210,16 +210,11 @@ body.schwifty {
     .equation-generator {
         height: max-content;
         padding-bottom: 15px;
-        margin-top: 15px;
     }
 }
 
 @media (max-width: 480px) {
     .Timer-div {
         width: 35%;
-    }
-
-    .equation-generator {
-        margin-top: 30px;
     }
 }

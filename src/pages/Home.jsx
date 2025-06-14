@@ -7,7 +7,7 @@ import Header from '../Header';
 
 function Home() {
     return (<div>
-        <Header />
+        <Header /><br /><br />
         <span className='equspan'>
             <EquationQuizGame />
         </span>
