@@ -217,6 +217,9 @@ body.schwifty {
 @media (max-width: 480px) {
     .Timer-div {
         width: 35%;
-        margin-top: 15px;
+    }
+
+    .equation-generator {
+        margin-top: 20px;
     }
 }
