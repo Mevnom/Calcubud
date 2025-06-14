@@ -172,7 +172,9 @@ const EquationQuizGame = () => {
         ))}
       </ol>
       <span>
-        <button> <a href="/" className='rt'> Restart game </a></button>
+        <button>
+          <a href="https://mevnom.github.io/calcubud/" className='rt'> Restart Game</a>
+        </button>
       </span>
     </div>
   );
@@ -209,7 +211,7 @@ const EquationQuizGame = () => {
           <div className="question-section">
             <h3>{questions[currentQuestion]?.eq}</h3>
             <input
-              type="text"
+              type="number"
               value={userAnswers[currentQuestion] || ''}
               onChange={handleAnswer}
             />
