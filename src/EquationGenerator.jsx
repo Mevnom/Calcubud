@@ -184,7 +184,7 @@ const EquationQuizGame = () => {
             <button onClick={(e) => handleModeChange(e.target.value)} value={'basic'}>Basic Mode</button>
             <button onClick={(e) => handleModeChange(e.target.value)} value={'medium'}>Medium Mode</button>
             <button onClick={(e) => handleModeChange(e.target.value)} value={'expert'}>Expert Mode</button>
-            <button onClick={(e) => handleModeChange(e.target.value)} value={'pro'}>Pro Mode</button>
+            <button onClick={(e) => handleModeChange(e.target.value)} value={'pro'}>Pro Mode🔥</button>
           </span>
           <span className='mode-spandeux'>
             <h2>
