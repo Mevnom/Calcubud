@@ -207,14 +207,16 @@ body.schwifty {
 }
 
 @media screen and (max-width: 768px) {
-.equation-generator{
-    height: max-content;
-    padding-bottom: 15px;
-}
+    .equation-generator {
+        height: max-content;
+        padding-bottom: 15px;
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-.Timer-div{
-    width:33%
-}
+    .Timer-div {
+        width: 35%;
+        margin-top: 15px;
+    }
 }
