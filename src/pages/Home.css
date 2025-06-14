@@ -12,3 +12,9 @@
     left: 0;
   }
 }
+
+@media (max-width: 480px) {
+  .equspan {
+    margin-top: 15px;
+  }
+}

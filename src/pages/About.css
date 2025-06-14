@@ -10,8 +10,18 @@
     border-radius: 10px;
     font-family: 'Soulside Betrayed', serif;
     font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+}
+.context h2{
+    text-align: center;
+}
+
+.context h3{
+    text-align: center;
+}
+
+.context h4{
+    text-align: center;
 }
 
 .context p {
