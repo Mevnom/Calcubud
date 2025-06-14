@@ -1,5 +1,6 @@
 // EquationQuizGame.jsx
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from "react-router-dom";
 import './EquationGenerator.css';
 
 const EquationQuizGame = () => {
@@ -158,18 +159,20 @@ const EquationQuizGame = () => {
 
   const renderSummary = () => (
     <div className="summary">
-      <h2>Summary</h2>
+      <h2>-Summary-</h2>
       <p>You answered {userAnswers.filter((a) => a !== undefined).length} out of {questions.length} questions.</p>
       <p><strong>Cumulative Score: {score}</strong> ✅</p>
       <ol>
         {questions.map((q, i) => (
           <li key={i}>
-            Q: {q.eq} | Correct: {q.ans} | Your Answer: {userAnswers[i] || '—'}
+            Question: ( {q.eq} ) <br /><br /> Correct Answer: {q.ans} <br /><br /> Your Answer: {userAnswers[i] || 'null, Olodo.'} <br /><div>
+              <br />
+            </div>
           </li>
         ))}
       </ol>
       <span>
-        <button>Restart game</button>
+        <button> <a href="/" className='rt'> Restart game </a></button>
       </span>
     </div>
   );
@@ -195,7 +198,7 @@ const EquationQuizGame = () => {
             <br />
             <span><br />
             </span>
-            <div className='note'>-read game description for full understanding- </div>
+            <div className='note'>-read <Link to={"/about"}><span > game description </span> </Link>for full understanding- </div>
           </span>
 
         </div>

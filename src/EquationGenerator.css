@@ -164,6 +164,10 @@ body.schwifty {
     background-color: red;
 }
 
+.summary{
+    height: max-content;
+}
+
 .mode-spandiv {
     display: flex;
     flex-direction: row;
@@ -173,11 +177,7 @@ body.schwifty {
 .mode-spandeux {
     padding-top: 115px;
     width: 80%;
-}
-
-.mode-spandeux>span {
-    font-size: medium;
-    text-align: center;
+    font-size: large;
 }
 
 .mode-spandeux>h2 {
@@ -201,9 +201,14 @@ body.schwifty {
 .note {
     margin-top: 50px;
     padding-top: 10px;
-    font-size: medium;
+    font-size: large;
     font-family: 'Soulside Betrayed', serif;
     text-align: center;
+}
+
+.rt{
+    text-decoration: none;
+    color: #E8E1D4;
 }
 
 @media screen and (max-width: 768px) {
